@@ -1,0 +1,73 @@
+DECLARE
+  A INTEGER := 1;
+  B INTEGER := 2;
+  c INTEGER;
+BEGIN 
+  C := A+B;
+  DBMS_OUTPUT.PUT_LINE('The Sum is '||C); 
+END;
+
+
+
+-- Largest among 3 numbers
+DECLARE
+  A INTEGER := 8;
+  B INTEGER := 7;
+  c INTEGER := 6;
+  BIG INTEGER;
+BEGIN 
+  IF(A>B) THEN
+  BIG := A;
+  ELSE
+  BIG := B;
+  END IF;
+  IF(C > BIG) THEN
+  DBMS_OUTPUT.PUT_LINE('Largest number is '||C);
+  ELSE
+  DBMS_OUTPUT.PUT_LINE('Largest number is '||BIG);
+  END IF;
+END;
+
+
+
+-- Else If
+DECLARE
+  A INTEGER := 10;
+BEGIN 
+  IF(A=10) THEN
+   DBMS_OUTPUT.PUT_LINE('The number is 10');
+  ELSIF(A=20) THEN
+   DBMS_OUTPUT.PUT_LINE('The number is 20');
+  ELSE
+   DBMS_OUTPUT.PUT_LINE('Other Number');
+  END IF;
+END;
+
+
+
+-- CASE
+DECLARE
+  GRADE char(1) := 'A';
+BEGIN 
+  CASE GRADE
+  WHEN 'A' THEN DBMS_OUTPUT.PUT_LINE('EXCELLENT');
+  WHEN 'B' THEN DBMS_OUTPUT.PUT_LINE('VERY GOOD');
+  WHEN 'C' THEN DBMS_OUTPUT.PUT_LINE('WELL DONE');
+  WHEN 'D' THEN DBMS_OUTPUT.PUT_LINE('PASSED');
+  WHEN 'E' THEN DBMS_OUTPUT.PUT_LINE('FAILED');
+  ELSE DBMS_OUTPUT.PUT_LINE('INVALID GRADE');
+  END CASE;
+END;
+
+
+
+-- WHILE LOOP
+DECLARE
+  i INTEGER := 1;
+BEGIN 
+  WHILE i <= 10
+  LOOP
+  DBMS_OUTPUT.PUT_LINE(i);
+  i := i+1;
+  END LOOP;
+END;

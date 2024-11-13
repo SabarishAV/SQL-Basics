@@ -1,0 +1,9 @@
+CREATE DATABASE sample
+
+SHOW DATABASES
+
+USE sample
+
+-- ALTER DATABASE sample MODIFY NAME = sample_1;
+
+DROP DATABASE sample

@@ -1,0 +1,4 @@
+INSERT INTO Customers 
+VALUES
+(1,'John','john@gmail.com','USA'),
+(2,'Bob','bob@gmail.com','India')
